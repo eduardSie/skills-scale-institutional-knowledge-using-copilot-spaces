@@ -1,35 +1,66 @@
-# OctoAcme — Project Management Docs
+# OctoAcme Project Management Docs
 
-This README centralizes OctoAcme's project management process documents. It includes a brief summary of our project management processes and direct links to the detailed documents stored in the docs/ directory.
+Welcome to the OctoAcme Project Management Documentation Hub. This directory contains comprehensive guidance for running projects at OctoAcme using our standardized processes, roles, and best practices.
 
-## Summary of OctoAcme Project Management Processes
+## Overview
 
-OctoAcme runs projects using an iterative, customer-first approach with clear roles and lightweight artifacts to ensure alignment and repeatable delivery. Key points:
+OctoAcme uses a structured, customer-first approach to project management that emphasizes iterative delivery, clear ownership, and data-informed decisions. Our processes are designed to scale institutional knowledge across the organization while maintaining consistency and transparency.
 
-- Initiation: validate problems and outcomes with a Project One-pager; confirm stakeholders and go/no-go.
-- Planning: create prioritized backlogs with acceptance criteria, estimates, and a Definition of Done.
-- Execution & Tracking: use a project board and small PRs, run CI and QA, and track progress with velocity and burndown.
-- Release & Deployment: follow pre-release checks, run smoke tests, and have rollback/playbooks for incidents.
-- Retrospectives & Improvement: capture actions from retrospectives and track improvements in the backlog.
-- Risk & Communication: maintain a Risk Register, use weekly status templates, and follow escalation paths.
+### Core Principles
+- **Customer-first**: Prioritize customer value and usability
+- **Iterative delivery**: Deliver small, testable increments
+- **Clear ownership**: Each project has named PM and Product Lead roles
+- **Data-informed decisions**: Measure impact and iterate based on evidence
+- **Psychological safety**: Encourage feedback and learning
 
-Use the documents linked below for the full process details and templates.
+## OctoAcme Project Management Framework
 
-## Project Management Process Documents (links)
+### Process Overview and Lifecycle
 
-- [Project Management Overview](./octoacme-project-management-overview.md)
-- [Project Initiation Guide](./octoacme-project-initiation.md)
-- [Project Planning](./octoacme-project-planning.md)
-- [Execution & Tracking](./octoacme-execution-and-tracking.md)
-- [Release & Deployment Guide](./octoacme-release-and-deployment.md)
-- [Retrospective & Continuous Improvement](./octoacme-retrospective-and-continuous-improvement.md)
-- [Risk Management & Communication](./octoacme-risks-and-communication.md)
-- [Roles & Personas](./octoacme-roles-and-personas.md)
+OctoAcme manages projects through a five-phase lifecycle that emphasizes structured planning, transparent communication, and continuous improvement. The project lifecycle spans **Initiation** (validating business need and stakeholder alignment), **Planning** (breaking work into shippable increments and defining success criteria), **Execution** (daily build, test, and review cycles), **Release** (standardized deployment with rollback safeguards), and **Close & Retrospective** (capturing learnings and driving continuous improvement). At each stage, teams rely on lightweight artifacts—including a Project One-pager, prioritized backlogs with acceptance criteria, and risk registers—to maintain alignment and transparency. This phased approach ensures that decisions are made with clear success metrics and that dependencies across teams are identified early and monitored throughout delivery.
 
-## How to propose changes
+### Roles, Communication, and Accountability
 
-If you want to add or update content in these process documents, please use the repository issue template: "Add Content to Project Management Process Docs" located in .github/ISSUE_TEMPLATE/. Open a new issue using that template and provide the requested details.
+The framework defines three core delivery roles: **Product Managers** who own the vision and prioritize the backlog; **Project Managers** who coordinate schedules, risks, and stakeholder communications; and **Developers** who implement features while maintaining high quality and testability. Cross-functional collaboration is baked into the cadence: daily standups (15 minutes) focus on progress and blockers, weekly PM-PdM syncs ensure alignment, and twice-weekly team standups maintain momentum. Stakeholders receive monthly updates and can be escalated to when blockers threaten delivery. This clear ownership model, combined with a consistent communication rhythm, reduces single-person dependency risk and gives all team members equal access to decisions and rationale.
+
+### Quality, Risk Management, and Continuous Improvement
+
+Quality is embedded throughout execution via unit tests, integration tests, end-to-end smoke tests, security scanning in CI, and manual QA for feature acceptance. Risk management is structured around a simple risk register (tracking ID, description, impact, likelihood, owner, and mitigation), reviewed weekly and escalated through defined levels (team → PM → Product Lead → Sponsor). Teams use a standardized Definition of Done to ensure consistency, small PRs (≤400 lines) to enable faster reviews, and automated CI/CD pipelines to reduce manual error. After each sprint, release, or incident, retrospectives capture what went well and what could improve, with 2–3 prioritized action items fed back into the backlog. This cycle of building incrementally, measuring impact, and iterating based on evidence ensures OctoAcme teams deliver reliably while continuously strengthening their processes.
+
+## Project Management Process Documents
+
+### Project Lifecycle Phases
+
+| Phase | Document | Purpose |
+|-------|----------|---------|
+| **Initiation** | [Project Initiation Guide](./octoacme-project-initiation.md) | Validate business need, align stakeholders, and authorize work |
+| **Planning** | [Project Planning](./octoacme-project-planning.md) | Break work into shippable increments and define delivery plan |
+| **Execution** | [Execution & Tracking](./octoacme-execution-and-tracking.md) | Manage day-to-day delivery and track progress toward milestones |
+| **Release** | [Release & Deployment Guide](./octoacme-release-and-deployment.md) | Standardize feature releases and deployments to production |
+| **Retrospective** | [Retrospective & Continuous Improvement](./octoacme-retrospective-and-continuous-improvement.md) | Capture learnings and convert them into improvements |
+
+### Cross-Cutting Topics
+
+- **[Project Management Overview](./octoacme-project-management-overview.md)** — High-level introduction to how OctoAcme runs projects, key roles, artifacts, and communication cadence
+- **[Risk Management & Communication](./octoacme-risks-and-communication.md)** — How to identify, manage, and communicate risks, dependencies, and stakeholder updates
+- **[Roles & Personas](./octoacme-roles-and-personas.md)** — Definitions of key project roles including Developers, Product Managers, and Project Managers
+
+## Quick Links
+
+- **New to OctoAcme?** Start with [Project Management Overview](./octoacme-project-management-overview.md)
+- **Starting a new project?** Begin with [Project Initiation Guide](./octoacme-project-initiation.md)
+- **Need to manage risks?** See [Risk Management & Communication](./octoacme-risks-and-communication.md)
+- **Releasing to production?** Check [Release & Deployment Guide](./octoacme-release-and-deployment.md)
+
+## Contributing to These Docs
+
+Have feedback, found a gap, or want to improve the processes? Use the [Process Doc Update issue template](../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml) to:
+- Suggest clarifications or updates
+- Propose new content or checklists
+- Share process improvements based on team feedback
 
 ---
+
+*Maintained by: OctoAcme Project Management Team*
 
 _Last updated: 2026-05-16_
